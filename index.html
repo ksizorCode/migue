@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Éclat Résidence | Lujo y Sofisticación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+        .gold-accent { color: #C5A059; }
+        .bg-gold { background-color: #C5A059; }
+        .border-gold { border-color: #C5A059; }
+        
+        .fade-in {
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            color: #1a1a1a !important;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900">
+
+    <!-- Navegación -->
+    <nav id="main-nav" class="fixed w-full z-50 transition-all duration-500 px-8 py-6 flex justify-between items-center text-white">
+        <div class="text-2xl tracking-[0.3em] font-light">L'ÉCLAT</div>
+        <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest font-light">
+            <a href="#inicio" class="hover:text-gold-accent transition-colors">Inicio</a>
+            <a href="#habitaciones" class="hover:text-gold-accent transition-colors">Habitaciones</a>
+            <a href="#gastronomia" class="hover:text-gold-accent transition-colors">Gastronomía</a>
+            <a href="#spa" class="hover:text-gold-accent transition-colors">Bienestar</a>
+            <a href="#contacto" class="hover:text-gold-accent transition-colors">Contacto</a>
+        </div>
+        <button class="border border-white px-6 py-2 text-xs uppercase tracking-widest hover:bg-white hover:text-stone-900 transition-all">Reservar</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="fade-in">
+            <span class="uppercase tracking-[0.5em] text-sm mb-4 block">Bienvenidos a la Excelencia</span>
+            <h1 class="text-6xl md:text-8xl font-light mb-8">L'Éclat Résidence</h1>
+            <div class="w-24 h-px bg-gold mx-auto mb-8"></div>
+            <p class="max-w-xl mx-auto text-lg font-light italic">"Donde la elegancia clásica se encuentra con el confort contemporáneo en el corazón de la ciudad."</p>
+        </div>
+    </header>
+
+    <!-- Sección Introducción -->
+    <section class="py-24 px-8 max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl mb-6 font-light">Un Refugio de Serenidad</h2>
+        <p class="text-stone-500 leading-loose max-w-3xl mx-auto font-light">
+            En L'Éclat, cada detalle ha sido cuidadosamente curado para ofrecer una experiencia sin precedentes. Desde el aroma de nuestras flores frescas hasta la suavidad de nuestras sábanas de seda egipcia, su estancia será un viaje sensorial inolvidable.
+        </p>
+    </section>
+
+    <!-- Habitaciones -->
+    <section id="habitaciones" class="py-12 bg-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <div class="relative group overflow-hidden h-[600px]">
+                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1200" alt="Suite Presidencial" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-12 text-white">
+                    <h3 class="text-3xl mb-2">Suite Royale</h3>
+                    <p class="text-sm uppercase tracking-widest mb-4">Vistas al Jardín • 120m²</p>
+                    <a href="#" class="text-xs border-b border-white inline-block pb-1 w-max hover:text-gold-accent hover:border-gold transition-all">Ver Detalles</a>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden h-[600px]">
+                <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80&w=1200" alt="Habitación Deluxe" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-12 text-white">
+                    <h3 class="text-3xl mb-2">Chambre de Luxe</h3>
+                    <p class="text-sm uppercase tracking-widest mb-4">Terraza Privada • 65m²</p>
+                    <a href="#" class="text-xs border-b border-white inline-block pb-1 w-max hover:text-gold-accent hover:border-gold transition-all">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gastronomía -->
+    <section id="gastronomia" class="py-24 px-8 bg-stone-100">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2">
+                <span class="gold-accent uppercase tracking-widest text-xs font-semibold mb-4 block">Alta Cocina</span>
+                <h2 class="text-5xl font-light mb-8">Restaurante L'Essence</h2>
+                <p class="text-stone-600 leading-loose mb-8 font-light">
+                    Bajo la dirección del Chef Julien Moreau, L'Essence ofrece una interpretación moderna de los clásicos franceses, utilizando ingredientes de nuestra huerta orgánica privada. Una experiencia culinaria galardonada con estrellas Michelin.
+                </p>
+                <button class="bg-stone-900 text-white px-10 py-4 text-xs uppercase tracking-widest hover:bg-gold transition-colors">Reservar Mesa</button>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=1000" alt="Gastronomía" class="shadow-2xl rounded-sm">
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Spa -->
+    <section id="spa" class="py-24 text-center bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-5xl font-light mb-12">Le Sanctuaire Spa</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="mb-4 flex justify-center"><svg class="w-10 h-10 gold-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"></path></svg></div>
+                    <h4 class="text-xl mb-2">Hidroterapia</h4>
+                    <p class="text-stone-500 text-sm font-light">Piscinas termales y circuitos de agua pura.</p>
+                </div>
+                <div>
+                    <div class="mb-4 flex justify-center"><svg class="w-10 h-10 gold-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg></div>
+                    <h4 class="text-xl mb-2">Tratamientos</h4>
+                    <p class="text-stone-500 text-sm font-light">Masajes personalizados con esencias botánicas.</p>
+                </div>
+                <div>
+                    <div class="mb-4 flex justify-center"><svg class="w-10 h-10 gold-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></div>
+                    <h4 class="text-xl mb-2">Meditación</h4>
+                    <p class="text-stone-500 text-sm font-light">Espacios diseñados para el silencio absoluto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-stone-950 text-stone-400 py-16 px-8">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="md:col-span-2">
+                <div class="text-2xl tracking-[0.3em] font-light text-white mb-6">L'ÉCLAT</div>
+                <p class="max-w-sm mb-6 text-sm">Elevando los estándares de la hospitalidad de lujo desde 1920. Una dirección icónica para el viajero más exigente.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-white transition-colors">Instagram</a>
+                    <a href="#" class="hover:text-white transition-colors">Facebook</a>
+                    <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-white uppercase tracking-widest text-xs mb-6">Contacto</h5>
+                <p class="text-sm mb-2">Avenue de la Paix 75, París</p>
+                <p class="text-sm mb-2">+33 1 23 45 67 89</p>
+                <p class="text-sm">concierge@leclat.com</p>
+            </div>
+            <div>
+                <h5 class="text-white uppercase tracking-widest text-xs mb-6">Suscripción</h5>
+                <p class="text-sm mb-4">Reciba ofertas exclusivas y novedades.</p>
+                <div class="flex border-b border-stone-700 pb-2">
+                    <input type="email" placeholder="Email" class="bg-transparent border-none focus:outline-none text-sm w-full">
+                    <button class="text-white text-xs uppercase tracking-widest">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-stone-900 mt-16 pt-8 text-[10px] uppercase tracking-widest text-center">
+            &copy; 2024 L'Éclat Résidence. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        // Cambio de estilo en la barra de navegación al hacer scroll
+        window.onscroll = function() {
+            const nav = document.getElementById('main-nav');
+            if (window.pageYOffset > 50) {
+                nav.classList.add('nav-scrolled');
+                nav.classList.remove('text-white');
+                nav.classList.remove('py-6');
+                nav.classList.add('py-4');
+            } else {
+                nav.classList.remove('nav-scrolled');
+                nav.classList.add('text-white');
+                nav.classList.remove('py-4');
+                nav.classList.add('py-6');
+            }
+        };
+
+        // Simulación de interacción de reserva
+        document.querySelectorAll('button').forEach(btn => {
+            btn.onclick = () => {
+                const modal = document.createElement('div');
+                modal.className = "fixed inset-0 z-[100] flex items-center justify-center bg-black bg-opacity-80 p-4";
+                modal.innerHTML = `
+                    <div class="bg-white p-12 max-w-md w-full text-center relative">
+                        <button id="close" class="absolute top-4 right-4 text-stone-400 hover:text-stone-900">✕</button>
+                        <h2 class="text-3xl mb-4 font-light">Solicitud Recibida</h2>
+                        <p class="text-stone-500 mb-8 font-light">Nuestro concierge se pondrá en contacto con usted en breve para confirmar los detalles de su estancia.</p>
+                        <button class="bg-stone-900 text-white px-8 py-3 text-xs uppercase tracking-widest w-full" onclick="this.parentElement.parentElement.remove()">Cerrar</button>
+                    </div>
+                `;
+                document.body.appendChild(modal);
+                document.getElementById('close').onclick = () => modal.remove();
+            }
+        });
+    </script>
+</body>
+</html>
